@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HAINP — HAIN Protocol</title>
+  <style>
+    body { margin:0; font-family:Arial,sans-serif; line-height:1.6; color:#111; }
+    header, main, footer { max-width:1000px; margin:0 auto; padding:24px; }
+    header { border-bottom:1px solid #ddd; }
+    nav a { margin-right:16px; color:#0a58ca; text-decoration:none; }
+    .draft { border:1px solid #ddd; padding:16px; margin-top:16px; }
+  </style>
+</head>
+<body>
+  <header>
+    <strong><a href="../" style="text-decoration:none; color:#111;">HAINPRO</a></strong>
+    <nav style="margin-top:12px;">
+      <a href="../">Overview</a>
+      <a href="../atlas/">Atlas</a>
+      <a href="../compare/">Compare</a>
+      <a href="../gap-map/">Gap Map</a>
+      <a href="../hainp/">HAINP</a>
+      <a href="../profiles/">Profiles</a>
+      <a href="../resources/">Resources</a>
+    </nav>
+  </header>
 
+  <main>
+    <h1>HAIN Protocol (HAINP)</h1>
+    <p>
+      HAINP is the policy-aware execution and interoperability layer for
+      hybrid AI-native systems across local, edge, private, and cloud environments.
+    </p>
+
+    <section>
+      <h2>What HAINP is</h2>
+      <p>
+        HAINP is designed to define shared semantics for execution domains,
+        locality constraints, routing intent, governed fallback, context portability,
+        and trace continuity.
+      </p>
+    </section>
+
+    <section>
+      <h2>What HAINP is not</h2>
+      <p>
+        HAINP is not a transport protocol, not a replacement for MCP, and not
+        a replacement for A2A. It is intended to complement the existing protocol
+        stack by defining the missing execution and governance layer.
+      </p>
+    </section>
+
+    <section>
+      <h2>Initial draft set</h2>
+
+      <div class="draft">
+        <h3>HAINP-000 — Overview</h3>
+        <p>Scope, non-goals, terminology, and protocol position within the stack.</p>
+      </div>
+
+      <div class="draft">
+        <h3>HAINP-001 — Capability and Handshake</h3>
+        <p>How nodes declare capabilities and negotiate execution readiness.</p>
+      </div>
+
+      <div class="draft">
+        <h3>HAINP-002 — Policy and Locality</h3>
+        <p>How locality, residency, and execution constraints are expressed.</p>
+      </div>
+
+      <div class="draft">
+        <h3>HAINP-003 — Routing and Fallback</h3>
+        <p>How systems express routing intent, degrade gracefully, and preserve governance.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="../gap-map/">See why HAINP is needed</a></p>
+  </footer>
+</body>
+</html>
