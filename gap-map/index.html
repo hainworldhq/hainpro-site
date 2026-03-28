@@ -1,1 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gap Map — HAINPRO</title>
+  <style>
+    body { margin:0; font-family:Arial,sans-serif; line-height:1.6; color:#111; }
+    header, main, footer { max-width:1000px; margin:0 auto; padding:24px; }
+    header { border-bottom:1px solid #ddd; }
+    nav a { margin-right:16px; color:#0a58ca; text-decoration:none; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:16px; }
+    .card { border:1px solid #ddd; padding:16px; }
+  </style>
+</head>
+<body>
+  <header>
+    <strong><a href="../" style="text-decoration:none; color:#111;">HAINPRO</a></strong>
+    <nav style="margin-top:12px;">
+      <a href="../">Overview</a>
+      <a href="../atlas/">Atlas</a>
+      <a href="../compare/">Compare</a>
+      <a href="../gap-map/">Gap Map</a>
+      <a href="../hainp/">HAINP</a>
+      <a href="../profiles/">Profiles</a>
+      <a href="../resources/">Resources</a>
+    </nav>
+  </header>
 
+  <main>
+    <h1>Gap Map</h1>
+    <p>
+      Where today’s protocol stack stops — and where hybrid AI-native execution
+      still lacks shared semantics.
+    </p>
+
+    <section>
+      <h2>What existing protocols already cover</h2>
+      <p>
+        Today’s stack already covers transport, tool access, agent collaboration,
+        interface surfaces, identity foundations, observability, and packaging.
+      </p>
+    </section>
+
+    <section>
+      <h2>What remains underspecified</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Execution domains</h3>
+          <p>How tasks are expressed and constrained across local, edge, private, and public environments.</p>
+        </div>
+        <div class="card">
+          <h3>Locality and residency</h3>
+          <p>Where data, inference, and context may or may not go.</p>
+        </div>
+        <div class="card">
+          <h3>Policy-aware routing</h3>
+          <p>How privacy, latency, cost, sovereignty, and trust influence execution routing.</p>
+        </div>
+        <div class="card">
+          <h3>Governed fallback</h3>
+          <p>How systems reject, reroute, degrade, queue, or escalate execution under constraints.</p>
+        </div>
+        <div class="card">
+          <h3>Context portability</h3>
+          <p>How context moves across domains under controlled and auditable rules.</p>
+        </div>
+        <div class="card">
+          <h3>Trace and audit continuity</h3>
+          <p>How execution evidence remains connected across multiple systems and environments.</p>
+        </div>
+      </div>
+    </section>
+
+    <section style="margin-top:32px;">
+      <h2>Why HAINP exists</h2>
+      <p>
+        HAINP is intended to define the missing policy-aware execution layer
+        for hybrid AI-native systems, rather than replace the protocols that
+        already cover transport, tools, or agent communication.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="../hainp/">Go to HAINP</a></p>
+  </footer>
+</body>
+</html>
