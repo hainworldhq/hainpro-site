@@ -1,1 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resources — HAINPRO</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #111;
+      background: #fff;
+    }
+    header, main, footer {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    header {
+      border-bottom: 1px solid #ddd;
+    }
+    nav a {
+      margin-right: 16px;
+      color: #0a58ca;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      margin-top: 32px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      border: 1px solid #ddd;
+      padding: 16px;
+    }
+    .card h3 {
+      margin-top: 0;
+    }
+    ul {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <strong><a href="../" style="text-decoration:none; color:#111;">HAINPRO</a></strong>
+    <nav style="margin-top:12px;">
+      <a href="../">Overview</a>
+      <a href="../atlas/">Atlas</a>
+      <a href="../compare/">Compare</a>
+      <a href="../gap-map/">Gap Map</a>
+      <a href="../hainp/">HAINP</a>
+      <a href="../profiles/">Profiles</a>
+      <a href="../resources/">Resources</a>
+      <a href="../charter/">Charter</a>
+      <a href="../status/">Status</a>
+    </nav>
+  </header>
 
+  <main>
+    <section>
+      <h1>Resources</h1>
+      <p>
+        Reference materials, terminology, guiding questions, and supporting
+        notes for understanding the protocol ecosystem around hybrid AI-native systems.
+      </p>
+    </section>
+
+    <section>
+      <h2>Resource sections</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Glossary</h3>
+          <p>
+            Core terms such as execution domain, locality, routing intent,
+            fallback, trust zone, and context portability.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>FAQ</h3>
+          <p>
+            Short answers to recurring questions about MCP, A2A, HAINP,
+            protocol layers, and hybrid AI-native execution.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>References</h3>
+          <p>
+            External protocol sources, standards bodies, documentation,
+            and implementation references relevant to HAINPRO.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Notes</h3>
+          <p>
+            Editorial notes, comparison observations, and structured ideas
+            that support future drafts and profiles.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Initial glossary seeds</h2>
+      <ul>
+        <li><strong>Execution Domain</strong> — the environment in which a task runs, such as local, edge, private, or public.</li>
+        <li><strong>Locality</strong> — where data, inference, and context are allowed to remain or move.</li>
+        <li><strong>Routing Intent</strong> — the declared preference or requirement that influences where execution should happen.</li>
+        <li><strong>Fallback</strong> — the governed action taken when preferred execution is not possible.</li>
+        <li><strong>Trust Zone</strong> — a boundary of identity, control, and policy assumptions.</li>
+        <li><strong>Context Portability</strong> — the controlled movement of usable context across domains.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Initial FAQ seeds</h2>
+      <ul>
+        <li>What is the difference between MCP and A2A?</li>
+        <li>Why is HAINP not a replacement for MCP?</li>
+        <li>Why do hybrid AI-native systems need another layer?</li>
+        <li>What does policy-aware execution mean?</li>
+        <li>What is a profile in HAINPRO?</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Editorial direction</h2>
+      <p>
+        HAINPRO resources are intended to stay structured, layered, and
+        implementation-aware. The goal is not to collect random links, but
+        to build a usable protocol knowledge base that supports atlas mapping,
+        comparison, gap identification, and HAINP definition.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="../">Back to HAINPRO</a></p>
+  </footer>
+</body>
+</html>
