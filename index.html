@@ -4,59 +4,153 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HAINPRO — Protocol Atlas for Hybrid AI Native Systems</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #111;
+      background: #fff;
+    }
+    header, main, footer {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    header {
+      border-bottom: 1px solid #ddd;
+    }
+    nav a {
+      margin-right: 16px;
+      color: #0a58ca;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      padding: 40px 0 24px;
+    }
+    .hero h1 {
+      font-size: 2.2rem;
+      margin-bottom: 12px;
+    }
+    .hero p {
+      max-width: 760px;
+      font-size: 1.05rem;
+    }
+    .cta a {
+      display: inline-block;
+      margin-right: 12px;
+      margin-top: 12px;
+      padding: 10px 14px;
+      border: 1px solid #111;
+      text-decoration: none;
+      color: #111;
+    }
+    section {
+      margin-top: 36px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      border: 1px solid #ddd;
+      padding: 16px;
+    }
+    footer {
+      border-top: 1px solid #ddd;
+      margin-top: 48px;
+      font-size: 0.95rem;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>HAINPRO</h1>
-    <nav>
-      <a href="/">Overview</a>
-      <a href="/atlas/">Atlas</a>
-      <a href="/compare/">Compare</a>
-      <a href="/gap-map/">Gap Map</a>
-      <a href="/hainp/">HAINP</a>
-      <a href="/profiles/">Profiles</a>
-      <a href="/resources/">Resources</a>
-      <a href="/charter/">Charter</a>
-      <a href="/status/">Status</a>
+    <strong>HAINPRO</strong>
+    <nav style="margin-top: 12px;">
+      <a href="./">Overview</a>
+      <a href="./atlas/">Atlas</a>
+      <a href="./compare/">Compare</a>
+      <a href="./gap-map/">Gap Map</a>
+      <a href="./hainp/">HAINP</a>
+      <a href="./profiles/">Profiles</a>
+      <a href="./resources/">Resources</a>
+      <a href="./charter/">Charter</a>
+      <a href="./status/">Status</a>
     </nav>
   </header>
 
   <main>
-    <section>
-      <h2>Protocol Atlas for Hybrid AI Native Systems</h2>
+    <section class="hero">
+      <h1>Protocol Atlas for Hybrid AI Native Systems</h1>
       <p>
         HAINPRO maps the emerging protocol stack, compares what exists,
         identifies what is missing, and defines where HAINP fits as a
-        policy-aware execution layer for hybrid AI-native systems.
+        policy-aware execution layer for hybrid AI-native systems across
+        local, edge, private, and cloud environments.
       </p>
+      <div class="cta">
+        <a href="./atlas/">Explore the Atlas</a>
+        <a href="./gap-map/">See the Gap Map</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>What HAINPRO does</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Map the ecosystem</h3>
+          <p>Track the protocol landscape across web foundations, tools, agents, identity, observability, packaging, and governance.</p>
+        </div>
+        <div class="card">
+          <h3>Compare the layers</h3>
+          <p>Understand how MCP, A2A, ACP, and other protocols differ by scope, actor model, lifecycle, trust assumptions, and runtime role.</p>
+        </div>
+        <div class="card">
+          <h3>Define the missing layer</h3>
+          <p>Explain why hybrid AI-native systems still need shared semantics for execution domains, locality, routing, fallback, portability, and audit continuity.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Core sections</h2>
+      <div class="grid">
+        <div class="card">
+          <h3><a href="./atlas/">Atlas</a></h3>
+          <p>A layered map of the current protocol ecosystem.</p>
+        </div>
+        <div class="card">
+          <h3><a href="./compare/">Compare</a></h3>
+          <p>A structured comparison of protocols and standards.</p>
+        </div>
+        <div class="card">
+          <h3><a href="./gap-map/">Gap Map</a></h3>
+          <p>A view of what the current stack covers and what remains underspecified.</p>
+        </div>
+        <div class="card">
+          <h3><a href="./hainp/">HAINP</a></h3>
+          <p>The entry point for HAIN Protocol and its early drafts.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Initial HAINP direction</h2>
       <p>
-        <a href="/atlas/">Explore the Atlas</a> |
-        <a href="/gap-map/">See the Gap Map</a>
+        HAINP is not intended to replace HTTP, MCP, or A2A. It is intended
+        to define the policy-aware execution and interoperability semantics
+        that hybrid AI-native systems need across multiple execution domains.
       </p>
-    </section>
-
-    <section>
-      <h3>What HAINPRO does</h3>
-      <ul>
-        <li>Map the protocol ecosystem</li>
-        <li>Compare existing protocols and standards</li>
-        <li>Identify interoperability and governance gaps</li>
-        <li>Define the role of HAINP</li>
-        <li>Host profiles and capability tracks</li>
-      </ul>
-    </section>
-
-    <section>
-      <h3>Core sections</h3>
-      <ul>
-        <li><a href="/atlas/">Atlas</a></li>
-        <li><a href="/compare/">Compare</a></li>
-        <li><a href="/gap-map/">Gap Map</a></li>
-        <li><a href="/hainp/">HAINP</a></li>
-        <li><a href="/profiles/">Profiles</a></li>
-        <li><a href="/resources/">Resources</a></li>
-      </ul>
     </section>
   </main>
+
+  <footer>
+    <p>HAINPRO — Protocol Atlas for Hybrid AI Native Systems</p>
+  </footer>
 </body>
 </html>
