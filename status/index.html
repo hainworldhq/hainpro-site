@@ -1,1 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Status — HAINPRO</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #111;
+      background: #fff;
+    }
+    header, main, footer {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    header {
+      border-bottom: 1px solid #ddd;
+    }
+    nav a {
+      margin-right: 16px;
+      color: #0a58ca;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      margin-top: 32px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 16px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: #f7f7f7;
+    }
+    .note {
+      border: 1px solid #ddd;
+      padding: 16px;
+      margin-top: 16px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <strong><a href="../" style="text-decoration:none; color:#111;">HAINPRO</a></strong>
+    <nav style="margin-top:12px;">
+      <a href="../">Overview</a>
+      <a href="../atlas/">Atlas</a>
+      <a href="../compare/">Compare</a>
+      <a href="../gap-map/">Gap Map</a>
+      <a href="../hainp/">HAINP</a>
+      <a href="../profiles/">Profiles</a>
+      <a href="../resources/">Resources</a>
+      <a href="../charter/">Charter</a>
+      <a href="../status/">Status</a>
+    </nav>
+  </header>
 
+  <main>
+    <section>
+      <h1>Status</h1>
+      <p>
+        This page tracks the current maturity of HAINPRO content, HAINP draft work,
+        and profile coverage.
+      </p>
+    </section>
+
+    <section>
+      <h2>Site status</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Area</th>
+            <th>Status</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Overview</td>
+            <td>Live</td>
+            <td>Initial homepage structure is in place.</td>
+          </tr>
+          <tr>
+            <td>Atlas</td>
+            <td>Drafting</td>
+            <td>Initial layer map is defined and will expand over time.</td>
+          </tr>
+          <tr>
+            <td>Compare</td>
+            <td>Drafting</td>
+            <td>Initial comparison matrix is available and will be refined.</td>
+          </tr>
+          <tr>
+            <td>Gap Map</td>
+            <td>Drafting</td>
+            <td>Core missing-layer framing is established.</td>
+          </tr>
+          <tr>
+            <td>HAINP</td>
+            <td>Drafting</td>
+            <td>Landing page exists; draft documents are not yet published.</td>
+          </tr>
+          <tr>
+            <td>Profiles</td>
+            <td>Drafting</td>
+            <td>Profile families are defined; dedicated pages come next.</td>
+          </tr>
+          <tr>
+            <td>Resources</td>
+            <td>Pending</td>
+            <td>Glossary, FAQ, and references are not yet populated.</td>
+          </tr>
+          <tr>
+            <td>Charter</td>
+            <td>Live</td>
+            <td>Initial mission, scope, and non-goals are documented.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Hainp draft status</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Draft</th>
+            <th>Status</th>
+            <th>Current focus</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HAINP-000</td>
+            <td>Planned</td>
+            <td>Overview, terminology, scope, and non-goals</td>
+          </tr>
+          <tr>
+            <td>HAINP-001</td>
+            <td>Planned</td>
+            <td>Capability declaration and handshake model</td>
+          </tr>
+          <tr>
+            <td>HAINP-002</td>
+            <td>Planned</td>
+            <td>Policy, locality, and residency semantics</td>
+          </tr>
+          <tr>
+            <td>HAINP-003</td>
+            <td>Planned</td>
+            <td>Routing intent, fallback, and governed execution outcomes</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Profile priority status</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Profile</th>
+            <th>Status</th>
+            <th>Priority</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HAINAUTO</td>
+            <td>Selected for first expansion</td>
+            <td>High</td>
+          </tr>
+          <tr>
+            <td>HAINIOT</td>
+            <td>Defined</td>
+            <td>Medium</td>
+          </tr>
+          <tr>
+            <td>HAINBOT</td>
+            <td>Defined</td>
+            <td>Medium</td>
+          </tr>
+          <tr>
+            <td>HAINDATA</td>
+            <td>Defined</td>
+            <td>Medium</td>
+          </tr>
+          <tr>
+            <td>HAINCLOUD</td>
+            <td>Defined</td>
+            <td>Medium</td>
+          </tr>
+          <tr>
+            <td>HAINMOD</td>
+            <td>Defined</td>
+            <td>Medium</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Next actions</h2>
+      <div class="note">
+        <ul>
+          <li>Build the Resources page</li>
+          <li>Add dedicated draft pages for HAINP-000 to HAINP-003</li>
+          <li>Create the first profile page for HAINAUTO</li>
+          <li>Refine protocol coverage in Atlas and Compare</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="../">Back to HAINPRO</a></p>
+  </footer>
+</body>
+</html>
