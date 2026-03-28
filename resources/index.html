@@ -4,148 +4,94 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Resources — HAINPRO</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      color: #111;
-      background: #fff;
-    }
-    header, main, footer {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 24px;
-    }
-    header {
-      border-bottom: 1px solid #ddd;
-    }
-    nav a {
-      margin-right: 16px;
-      color: #0a58ca;
-      text-decoration: none;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    section {
-      margin-top: 32px;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 16px;
-    }
-    .card {
-      border: 1px solid #ddd;
-      padding: 16px;
-    }
-    .card h3 {
-      margin-top: 0;
-    }
-    ul {
-      padding-left: 20px;
-    }
-  </style>
+  <meta name="description" content="Resources, glossary seeds, FAQ, and notes supporting HAINPRO." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css" />
 </head>
 <body>
-  <header>
-    <strong><a href="../" style="text-decoration:none; color:#111;">HAINPRO</a></strong>
-    <nav style="margin-top:12px;">
-      <a href="../">Overview</a>
-      <a href="../atlas/">Atlas</a>
-      <a href="../compare/">Compare</a>
-      <a href="../gap-map/">Gap Map</a>
-      <a href="../hainp/">HAINP</a>
-      <a href="../profiles/">Profiles</a>
-      <a href="../resources/">Resources</a>
-      <a href="../charter/">Charter</a>
-      <a href="../status/">Status</a>
-    </nav>
-  </header>
-
-  <main>
-    <section>
-      <h1>Resources</h1>
-      <p>
-        Reference materials, terminology, guiding questions, and supporting
-        notes for understanding the protocol ecosystem around hybrid AI-native systems.
-      </p>
-    </section>
-
-    <section>
-      <h2>Resource sections</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Glossary</h3>
-          <p>
-            Core terms such as execution domain, locality, routing intent,
-            fallback, trust zone, and context portability.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>FAQ</h3>
-          <p>
-            Short answers to recurring questions about MCP, A2A, HAINP,
-            protocol layers, and hybrid AI-native execution.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>References</h3>
-          <p>
-            External protocol sources, standards bodies, documentation,
-            and implementation references relevant to HAINPRO.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Notes</h3>
-          <p>
-            Editorial notes, comparison observations, and structured ideas
-            that support future drafts and profiles.
-          </p>
+  
+      <div class="utility">
+        <div class="container">
+          <a href="https://hainworld.com">HAIN World</a>
+          <a href="https://hainative.com">HAINATIVE</a>
+          <a href="https://hainoa.org">HAINOA</a>
+          <a href="https://hainize.com">HAINIZE</a>
         </div>
       </div>
-    </section>
+    
+  <header class="site-header">
+    <div class="mainnav">
+      <div class="container">
+        <a href="../" class="brand">HAINPRO</a>
+        <nav class="navlinks"><a href="../">Overview</a><a href="../atlas/">Atlas</a><a href="../compare/">Compare</a><a href="../gap-map/">Gap Map</a><a href="../hainp/">HAINP</a><a href="../profiles/">Profiles</a><a href="../resources/">Resources</a><a href="../charter/">Charter</a><a href="../status/">Status</a></nav>
+      </div>
+    </div>
+  </header>
 
-    <section>
-      <h2>Initial glossary seeds</h2>
-      <ul>
-        <li><strong>Execution Domain</strong> — the environment in which a task runs, such as local, edge, private, or public.</li>
-        <li><strong>Locality</strong> — where data, inference, and context are allowed to remain or move.</li>
-        <li><strong>Routing Intent</strong> — the declared preference or requirement that influences where execution should happen.</li>
-        <li><strong>Fallback</strong> — the governed action taken when preferred execution is not possible.</li>
-        <li><strong>Trust Zone</strong> — a boundary of identity, control, and policy assumptions.</li>
-        <li><strong>Context Portability</strong> — the controlled movement of usable context across domains.</li>
-      </ul>
+  <main class="container">
+    <section class="hero">
+      <span class="eyebrow">Protocol Atlas for Hybrid AI Native Systems</span>
+      <h1>Resources</h1>
+      <p>Reference material, glossary seeds, FAQ, and structured notes for understanding the protocol ecosystem around hybrid AI-native systems.</p>
     </section>
+    
+<section class="section">
+  <h2>What belongs here</h2>
+  <p class="lead">Resources should become the working knowledge base behind the atlas, comparison, gap map, and HAINP drafts — not a generic link dump.</p>
+  <div class="grid">
+    <div class="card"><h3>Glossary</h3><p>Core terms such as execution domain, locality, routing intent, fallback, trust zone, and context portability.</p></div>
+    <div class="card"><h3>FAQ</h3><p>Short answers to recurring questions about MCP, A2A, HAINP, protocol layers, and hybrid AI-native execution.</p></div>
+    <div class="card"><h3>References</h3><p>External protocol sources, standards bodies, documentation, and implementation references relevant to HAINPRO.</p></div>
+    <div class="card"><h3>Notes</h3><p>Editorial notes, comparison observations, and structured ideas that support future drafts and profiles.</p></div>
+  </div>
+</section>
+<section class="section">
+  <h2>Initial glossary seeds</h2>
+  <ul class="list">
+    <li><strong>Execution Domain</strong> — the environment in which a task runs, such as local, edge, private, or public.</li>
+    <li><strong>Locality</strong> — where data, inference, and context are allowed to remain or move.</li>
+    <li><strong>Routing Intent</strong> — the declared preference or requirement that influences where execution should happen.</li>
+    <li><strong>Fallback</strong> — the governed action taken when preferred execution is not possible.</li>
+    <li><strong>Trust Zone</strong> — a boundary of identity, control, and policy assumptions.</li>
+    <li><strong>Context Portability</strong> — the controlled movement of usable context across domains.</li>
+  </ul>
+</section>
+<section class="section">
+  <h2>Immediate next additions</h2>
+  <div class="callout">
+    <p>Turn “Resources” from a placeholder into a maintained knowledge layer by publishing glossary entries, FAQ answers, and a first curated reference list tied directly to Atlas, Compare, and HAINP.</p>
+  </div>
+</section>
 
-    <section>
-      <h2>Initial FAQ seeds</h2>
-      <ul>
-        <li>What is the difference between MCP and A2A?</li>
-        <li>Why is HAINP not a replacement for MCP?</li>
-        <li>Why do hybrid AI-native systems need another layer?</li>
-        <li>What does policy-aware execution mean?</li>
-        <li>What is a profile in HAINPRO?</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Editorial direction</h2>
-      <p>
-        HAINPRO resources are intended to stay structured, layered, and
-        implementation-aware. The goal is not to collect random links, but
-        to build a usable protocol knowledge base that supports atlas mapping,
-        comparison, gap identification, and HAINP definition.
-      </p>
-    </section>
   </main>
 
-  <footer>
-    <p><a href="../">Back to HAINPRO</a></p>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand" style="font-size:1.25rem">HAINPRO</div>
+        <p class="small">The protocol atlas, comparison hub, and HAINP drafting layer within the HAIN system.</p>
+      </div>
+      <div>
+        <h4>HAIN chain</h4>
+        <ul class="small">
+          <li><a href="https://hainworld.com">HAIN World</a></li>
+          <li><a href="https://hainative.com">HAINATIVE</a></li>
+          <li><a href="https://hainoa.org">HAINOA</a></li>
+          <li><a href="https://hainize.com">HAINIZE</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Inside HAINPRO</h4>
+        <ul class="small">
+          <li><a href="../atlas/">Atlas</a></li>
+          <li><a href="../compare/">Compare</a></li>
+          <li><a href="../gap-map/">Gap Map</a></li>
+          <li><a href="../hainp/">HAINP</a></li>
+        </ul>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

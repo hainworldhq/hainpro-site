@@ -4,90 +4,90 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Compare Protocols — HAINPRO</title>
-  <style>
-    body { margin:0; font-family:Arial,sans-serif; line-height:1.6; color:#111; }
-    header, main, footer { max-width:1100px; margin:0 auto; padding:24px; }
-    header { border-bottom:1px solid #ddd; }
-    nav a { margin-right:16px; color:#0a58ca; text-decoration:none; }
-    table { width:100%; border-collapse:collapse; margin-top:20px; }
-    th, td { border:1px solid #ddd; padding:10px; text-align:left; vertical-align:top; }
-    th { background:#f7f7f7; }
-  </style>
+  <meta name="description" content="Compare protocol roles and boundaries across the emerging hybrid AI-native stack." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css" />
 </head>
 <body>
-  <header>
-    <strong><a href="../" style="text-decoration:none; color:#111;">HAINPRO</a></strong>
-    <nav style="margin-top:12px;">
-      <a href="../">Overview</a>
-      <a href="../atlas/">Atlas</a>
-      <a href="../compare/">Compare</a>
-      <a href="../gap-map/">Gap Map</a>
-      <a href="../hainp/">HAINP</a>
-      <a href="../profiles/">Profiles</a>
-      <a href="../resources/">Resources</a>
-    </nav>
+  
+      <div class="utility">
+        <div class="container">
+          <a href="https://hainworld.com">HAIN World</a>
+          <a href="https://hainative.com">HAINATIVE</a>
+          <a href="https://hainoa.org">HAINOA</a>
+          <a href="https://hainize.com">HAINIZE</a>
+        </div>
+      </div>
+    
+  <header class="site-header">
+    <div class="mainnav">
+      <div class="container">
+        <a href="../" class="brand">HAINPRO</a>
+        <nav class="navlinks"><a href="../">Overview</a><a href="../atlas/">Atlas</a><a href="../compare/">Compare</a><a href="../gap-map/">Gap Map</a><a href="../hainp/">HAINP</a><a href="../profiles/">Profiles</a><a href="../resources/">Resources</a><a href="../charter/">Charter</a><a href="../status/">Status</a></nav>
+      </div>
+    </div>
   </header>
 
-  <main>
-    <h1>Compare Protocols</h1>
-    <p>
-      A structured comparison of the emerging protocol stack by scope,
-      actors, and runtime role.
-    </p>
-
+  <main class="container">
+    <section class="hero">
+      <span class="eyebrow">Protocol Atlas for Hybrid AI Native Systems</span>
+      <h1>Compare Protocols</h1>
+      <p>A structured comparison of the emerging protocol stack by scope, actors, boundaries, and runtime role.</p>
+    </section>
+    
+<section class="section">
+  <h2>Comparison matrix</h2>
+  <p class="lead">The goal is not to force false equivalence. It is to show which protocols solve adjacent problems and where the unresolved layer begins.</p>
+  <div class="tablewrap">
     <table>
       <thead>
-        <tr>
-          <th>Protocol</th>
-          <th>Primary role</th>
-          <th>Main actors</th>
-          <th>What it helps solve</th>
-          <th>What it does not fully define</th>
-        </tr>
+        <tr><th>Protocol</th><th>Primary role</th><th>Main actors</th><th>What it helps solve</th><th>What remains underspecified</th></tr>
       </thead>
       <tbody>
-        <tr>
-          <td>MCP</td>
-          <td>Tool and context access</td>
-          <td>AI app, model, tool, external system</td>
-          <td>Connects models and applications to tools and data sources</td>
-          <td>Cross-domain execution semantics, policy-aware routing, governed fallback</td>
-        </tr>
-        <tr>
-          <td>A2A</td>
-          <td>Agent collaboration</td>
-          <td>Agent to agent</td>
-          <td>Supports communication and coordination across agents</td>
-          <td>Locality policy, execution-domain semantics, shared fallback contracts</td>
-        </tr>
-        <tr>
-          <td>ACP</td>
-          <td>Editor-agent surface</td>
-          <td>IDE/editor, coding agent</td>
-          <td>Standardizes editor-facing agent communication</td>
-          <td>General hybrid execution semantics across environments</td>
-        </tr>
-        <tr>
-          <td>HAINP</td>
-          <td>Hybrid execution and governance</td>
-          <td>Nodes, agents, runtimes, policy layers</td>
-          <td>Defines execution domains, locality, routing, fallback, portability, and audit continuity</td>
-          <td>Does not try to replace transport, tool access, or generic agent collaboration layers</td>
-        </tr>
+        <tr><td>MCP</td><td>Tool and context access</td><td>AI app, model, tool, external system</td><td>Connects models and applications to tools and data sources</td><td>Cross-domain execution semantics, policy-aware routing, governed fallback</td></tr>
+        <tr><td>A2A</td><td>Agent collaboration</td><td>Agent to agent</td><td>Supports communication and coordination across agents</td><td>Locality policy, execution-domain semantics, shared fallback contracts</td></tr>
+        <tr><td>ACP</td><td>Editor-agent surface</td><td>IDE/editor, coding agent</td><td>Standardizes editor-facing agent communication</td><td>General hybrid execution semantics across distributed environments</td></tr>
+        <tr><td>HAINP</td><td>Hybrid execution and governance</td><td>Nodes, agents, runtimes, policy layers</td><td>Defines execution domains, locality, routing, fallback, portability, and audit continuity</td><td>Does not replace transport, tool access, or generic agent collaboration layers</td></tr>
       </tbody>
     </table>
+  </div>
+</section>
+<section class="section">
+  <h2>Editorial note</h2>
+  <div class="callout">
+    <p>Protocols do not need to be mutually exclusive to be strategically important. HAINPRO assumes composition by layer, not winner-takes-all replacement.</p>
+  </div>
+</section>
 
-    <section style="margin-top:32px;">
-      <h2>Editorial note</h2>
-      <p>
-        Not every protocol competes with every other protocol. Many of the most
-        important protocols are complementary and operate at different layers.
-      </p>
-    </section>
   </main>
 
-  <footer>
-    <p><a href="../">Back to HAINPRO</a></p>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand" style="font-size:1.25rem">HAINPRO</div>
+        <p class="small">The protocol atlas, comparison hub, and HAINP drafting layer within the HAIN system.</p>
+      </div>
+      <div>
+        <h4>HAIN chain</h4>
+        <ul class="small">
+          <li><a href="https://hainworld.com">HAIN World</a></li>
+          <li><a href="https://hainative.com">HAINATIVE</a></li>
+          <li><a href="https://hainoa.org">HAINOA</a></li>
+          <li><a href="https://hainize.com">HAINIZE</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Inside HAINPRO</h4>
+        <ul class="small">
+          <li><a href="../atlas/">Atlas</a></li>
+          <li><a href="../compare/">Compare</a></li>
+          <li><a href="../gap-map/">Gap Map</a></li>
+          <li><a href="../hainp/">HAINP</a></li>
+        </ul>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

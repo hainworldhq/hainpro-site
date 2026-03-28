@@ -4,176 +4,93 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Profiles — HAINPRO</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      color: #111;
-      background: #fff;
-    }
-    header, main, footer {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 24px;
-    }
-    header {
-      border-bottom: 1px solid #ddd;
-    }
-    nav a {
-      margin-right: 16px;
-      color: #0a58ca;
-      text-decoration: none;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    section {
-      margin-top: 32px;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 16px;
-    }
-    .card {
-      border: 1px solid #ddd;
-      padding: 16px;
-    }
-    .card h3 {
-      margin-top: 0;
-      margin-bottom: 8px;
-    }
-    .tag {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 4px 8px;
-      border: 1px solid #bbb;
-      font-size: 0.88rem;
-      color: #444;
-    }
-    ul {
-      padding-left: 20px;
-    }
-  </style>
+  <meta name="description" content="Profiles and capability tracks for HAINPRO and HAINP." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css" />
 </head>
 <body>
-  <header>
-    <strong><a href="../" style="text-decoration:none; color:#111;">HAINPRO</a></strong>
-    <nav style="margin-top:12px;">
-      <a href="../">Overview</a>
-      <a href="../atlas/">Atlas</a>
-      <a href="../compare/">Compare</a>
-      <a href="../gap-map/">Gap Map</a>
-      <a href="../hainp/">HAINP</a>
-      <a href="../profiles/">Profiles</a>
-      <a href="../resources/">Resources</a>
-      <a href="../charter/">Charter</a>
-      <a href="../status/">Status</a>
-    </nav>
-  </header>
-
-  <main>
-    <section>
-      <h1>Profiles</h1>
-      <p>
-        Profiles adapt HAINP core semantics to specific industries, environments,
-        and operational constraints. They help translate protocol concepts into
-        real execution scenarios.
-      </p>
-    </section>
-
-    <section>
-      <h2>What a profile does</h2>
-      <ul>
-        <li>Defines domain-specific constraints and assumptions</li>
-        <li>Maps HAINP semantics to real operating environments</li>
-        <li>Identifies locality, routing, trust, and fallback requirements</li>
-        <li>Provides concrete scenarios for validation and future implementation</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Current profile families</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>HAINAUTO</h3>
-          <p>
-            Automotive, mobility, V2X, and vehicle-edge-cloud coordination.
-            This is the primary proving ground for hybrid execution semantics.
-          </p>
-          <span class="tag">Vertical Profile</span>
-        </div>
-
-        <div class="card">
-          <h3>HAINIOT</h3>
-          <p>
-            Industrial IoT, distributed edge environments, low-connectivity
-            operations, and device-to-edge coordination.
-          </p>
-          <span class="tag">Vertical Profile</span>
-        </div>
-
-        <div class="card">
-          <h3>HAINBOT</h3>
-          <p>
-            Robotics, embodied AI, and physical-agent execution across sensors,
-            actuators, local runtime layers, and remote coordination systems.
-          </p>
-          <span class="tag">Vertical Profile</span>
-        </div>
-
-        <div class="card">
-          <h3>HAINDATA</h3>
-          <p>
-            Data governance, data locality, context portability, residency rules,
-            auditability, and controlled cross-domain data movement.
-          </p>
-          <span class="tag">Capability Track</span>
-        </div>
-
-        <div class="card">
-          <h3>HAINCLOUD</h3>
-          <p>
-            Cloud collaboration, workload placement, cloud fallback, hybrid
-            inference routing, and policy-aware execution beyond local boundaries.
-          </p>
-          <span class="tag">Capability Track</span>
-        </div>
-
-        <div class="card">
-          <h3>HAINMOD</h3>
-          <p>
-            Modal and multimodal execution, including text, voice, vision,
-            sensor inputs, and cross-modal context transfer.
-          </p>
-          <span class="tag">Capability Track</span>
+  
+      <div class="utility">
+        <div class="container">
+          <a href="https://hainworld.com">HAIN World</a>
+          <a href="https://hainative.com">HAINATIVE</a>
+          <a href="https://hainoa.org">HAINOA</a>
+          <a href="https://hainize.com">HAINIZE</a>
         </div>
       </div>
-    </section>
+    
+  <header class="site-header">
+    <div class="mainnav">
+      <div class="container">
+        <a href="../" class="brand">HAINPRO</a>
+        <nav class="navlinks"><a href="../">Overview</a><a href="../atlas/">Atlas</a><a href="../compare/">Compare</a><a href="../gap-map/">Gap Map</a><a href="../hainp/">HAINP</a><a href="../profiles/">Profiles</a><a href="../resources/">Resources</a><a href="../charter/">Charter</a><a href="../status/">Status</a></nav>
+      </div>
+    </div>
+  </header>
 
-    <section>
-      <h2>Why profiles matter</h2>
-      <p>
-        HAINP is intended to stay compact at the core. Profiles provide the path
-        for expansion without overloading the protocol base. They allow HAINPRO
-        to grow across industries and capability domains while preserving a
-        stable execution and governance foundation.
-      </p>
+  <main class="container">
+    <section class="hero">
+      <span class="eyebrow">Protocol Atlas for Hybrid AI Native Systems</span>
+      <h1>Profiles</h1>
+      <p>Profiles adapt HAINP core semantics to specific industries, environments, and operational constraints.</p>
     </section>
+    
+<section class="section">
+  <h2>What a profile does</h2>
+  <ul class="list">
+    <li>Defines domain-specific constraints and assumptions</li>
+    <li>Maps HAINP semantics to real operating environments</li>
+    <li>Identifies locality, routing, trust, fallback, and observability requirements</li>
+    <li>Provides concrete scenarios for validation and future implementation</li>
+  </ul>
+</section>
+<section class="section">
+  <h2>Current profile families</h2>
+  <div class="grid">
+    <div class="card"><h3>HAINAUTO</h3><p>Automotive, mobility, V2X, and vehicle-edge-cloud coordination. This is the first proving ground for hybrid execution semantics.</p><span class="tag">Vertical Profile</span></div>
+    <div class="card"><h3>HAINIOT</h3><p>Industrial IoT, distributed edge environments, low-connectivity operations, and device-to-edge coordination.</p><span class="tag">Vertical Profile</span></div>
+    <div class="card"><h3>HAINBOT</h3><p>Robotics, embodied AI, and physical-agent execution across sensors, actuators, local runtime layers, and remote coordination systems.</p><span class="tag">Vertical Profile</span></div>
+    <div class="card"><h3>HAINDATA</h3><p>Data governance, locality, context portability, residency rules, auditability, and controlled cross-domain movement.</p><span class="tag">Capability Track</span></div>
+    <div class="card"><h3>HAINCLOUD</h3><p>Cloud collaboration, workload placement, cloud fallback, hybrid inference routing, and policy-aware execution beyond local boundaries.</p><span class="tag">Capability Track</span></div>
+    <div class="card"><h3>HAINMOD</h3><p>Modal and multimodal execution, including text, voice, vision, sensor inputs, and cross-modal context transfer.</p><span class="tag">Capability Track</span></div>
+  </div>
+</section>
+<section class="section">
+  <h2>Priority path</h2>
+  <div class="callout">
+    <p><strong>HAINAUTO</strong> should remain the first profile because it combines strong locality constraints, multi-domain execution, safety-sensitive fallback logic, and a clear vehicle-road-edge-cloud topology.</p>
+  </div>
+</section>
 
-    <section>
-      <h2>Current priority</h2>
-      <p>
-        HAINAUTO is the leading profile for early definition because it combines
-        strong locality constraints, multi-domain execution, safety-sensitive
-        fallback logic, and a clear vehicle-road-edge-cloud topology.
-      </p>
-    </section>
   </main>
 
-  <footer>
-    <p><a href="../hainp/">See HAINP core direction</a></p>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand" style="font-size:1.25rem">HAINPRO</div>
+        <p class="small">The protocol atlas, comparison hub, and HAINP drafting layer within the HAIN system.</p>
+      </div>
+      <div>
+        <h4>HAIN chain</h4>
+        <ul class="small">
+          <li><a href="https://hainworld.com">HAIN World</a></li>
+          <li><a href="https://hainative.com">HAINATIVE</a></li>
+          <li><a href="https://hainoa.org">HAINOA</a></li>
+          <li><a href="https://hainize.com">HAINIZE</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Inside HAINPRO</h4>
+        <ul class="small">
+          <li><a href="../atlas/">Atlas</a></li>
+          <li><a href="../compare/">Compare</a></li>
+          <li><a href="../gap-map/">Gap Map</a></li>
+          <li><a href="../hainp/">HAINP</a></li>
+        </ul>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

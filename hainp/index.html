@@ -4,80 +4,98 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HAINP — HAIN Protocol</title>
-  <style>
-    body { margin:0; font-family:Arial,sans-serif; line-height:1.6; color:#111; }
-    header, main, footer { max-width:1000px; margin:0 auto; padding:24px; }
-    header { border-bottom:1px solid #ddd; }
-    nav a { margin-right:16px; color:#0a58ca; text-decoration:none; }
-    .draft { border:1px solid #ddd; padding:16px; margin-top:16px; }
-  </style>
+  <meta name="description" content="HAIN Protocol overview and initial draft family." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css" />
 </head>
 <body>
-  <header>
-    <strong><a href="../" style="text-decoration:none; color:#111;">HAINPRO</a></strong>
-    <nav style="margin-top:12px;">
-      <a href="../">Overview</a>
-      <a href="../atlas/">Atlas</a>
-      <a href="../compare/">Compare</a>
-      <a href="../gap-map/">Gap Map</a>
-      <a href="../hainp/">HAINP</a>
-      <a href="../profiles/">Profiles</a>
-      <a href="../resources/">Resources</a>
-    </nav>
+  
+      <div class="utility">
+        <div class="container">
+          <a href="https://hainworld.com">HAIN World</a>
+          <a href="https://hainative.com">HAINATIVE</a>
+          <a href="https://hainoa.org">HAINOA</a>
+          <a href="https://hainize.com">HAINIZE</a>
+        </div>
+      </div>
+    
+  <header class="site-header">
+    <div class="mainnav">
+      <div class="container">
+        <a href="../" class="brand">HAINPRO</a>
+        <nav class="navlinks"><a href="../">Overview</a><a href="../atlas/">Atlas</a><a href="../compare/">Compare</a><a href="../gap-map/">Gap Map</a><a href="../hainp/">HAINP</a><a href="../profiles/">Profiles</a><a href="../resources/">Resources</a><a href="../charter/">Charter</a><a href="../status/">Status</a></nav>
+      </div>
+    </div>
   </header>
 
-  <main>
-    <h1>HAIN Protocol (HAINP)</h1>
-    <p>
-      HAINP is the policy-aware execution and interoperability layer for
-      hybrid AI-native systems across local, edge, private, and cloud environments.
-    </p>
-
-    <section>
-      <h2>What HAINP is</h2>
-      <p>
-        HAINP is designed to define shared semantics for execution domains,
-        locality constraints, routing intent, governed fallback, context portability,
-        and trace continuity.
-      </p>
+  <main class="container">
+    <section class="hero">
+      <span class="eyebrow">Protocol Atlas for Hybrid AI Native Systems</span>
+      <h1>HAIN Protocol (HAINP)</h1>
+      <p>The policy-aware execution and interoperability layer for hybrid AI-native systems.</p>
     </section>
+    
+<section class="section">
+  <h2>What HAINP is</h2>
+  <p class="lead">HAINP is the policy-aware execution and interoperability layer for hybrid AI-native systems across local, edge, private, and cloud environments.</p>
+  <div class="grid">
+    <div class="card"><h3>Execution domains</h3><p>Shared semantics for local, edge, private, and public execution placement.</p></div>
+    <div class="card"><h3>Locality constraints</h3><p>Rules for residency, movement, and permitted execution boundaries.</p></div>
+    <div class="card"><h3>Routing and fallback</h3><p>Intent-aware routing and governed degradation paths when preferred execution is unavailable.</p></div>
+    <div class="card"><h3>Portability and continuity</h3><p>Context portability plus trace and audit continuity across domain transitions.</p></div>
+  </div>
+</section>
+<section class="section">
+  <h2>What HAINP is not</h2>
+  <div class="note">
+    <ul class="list">
+      <li>Not a transport protocol</li>
+      <li>Not a replacement for HTTP or other core web standards</li>
+      <li>Not a replacement for MCP as a tool and context access protocol</li>
+      <li>Not a replacement for A2A as a generic agent collaboration protocol</li>
+      <li>Not a base automotive, V2X, or robotics control protocol</li>
+    </ul>
+  </div>
+</section>
+<section class="section">
+  <h2>Initial draft family</h2>
+  <div class="grid">
+    <div class="card"><h3>HAINP-000</h3><p>Overview, terminology, scope, and non-goals</p></div>
+    <div class="card"><h3>HAINP-001</h3><p>Capability declaration and handshake</p></div>
+    <div class="card"><h3>HAINP-002</h3><p>Policy, locality, and residency semantics</p></div>
+    <div class="card"><h3>HAINP-003</h3><p>Routing intent, fallback, and governed outcomes</p></div>
+  </div>
+</section>
 
-    <section>
-      <h2>What HAINP is not</h2>
-      <p>
-        HAINP is not a transport protocol, not a replacement for MCP, and not
-        a replacement for A2A. It is intended to complement the existing protocol
-        stack by defining the missing execution and governance layer.
-      </p>
-    </section>
-
-    <section>
-      <h2>Initial draft set</h2>
-
-      <div class="draft">
-        <h3>HAINP-000 — Overview</h3>
-        <p>Scope, non-goals, terminology, and protocol position within the stack.</p>
-      </div>
-
-      <div class="draft">
-        <h3>HAINP-001 — Capability and Handshake</h3>
-        <p>How nodes declare capabilities and negotiate execution readiness.</p>
-      </div>
-
-      <div class="draft">
-        <h3>HAINP-002 — Policy and Locality</h3>
-        <p>How locality, residency, and execution constraints are expressed.</p>
-      </div>
-
-      <div class="draft">
-        <h3>HAINP-003 — Routing and Fallback</h3>
-        <p>How systems express routing intent, degrade gracefully, and preserve governance.</p>
-      </div>
-    </section>
   </main>
 
-  <footer>
-    <p><a href="../gap-map/">See why HAINP is needed</a></p>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand" style="font-size:1.25rem">HAINPRO</div>
+        <p class="small">The protocol atlas, comparison hub, and HAINP drafting layer within the HAIN system.</p>
+      </div>
+      <div>
+        <h4>HAIN chain</h4>
+        <ul class="small">
+          <li><a href="https://hainworld.com">HAIN World</a></li>
+          <li><a href="https://hainative.com">HAINATIVE</a></li>
+          <li><a href="https://hainoa.org">HAINOA</a></li>
+          <li><a href="https://hainize.com">HAINIZE</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Inside HAINPRO</h4>
+        <ul class="small">
+          <li><a href="../atlas/">Atlas</a></li>
+          <li><a href="../compare/">Compare</a></li>
+          <li><a href="../gap-map/">Gap Map</a></li>
+          <li><a href="../hainp/">HAINP</a></li>
+        </ul>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

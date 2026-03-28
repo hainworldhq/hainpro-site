@@ -4,89 +4,86 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Protocol Atlas — HAINPRO</title>
-  <style>
-    body { margin:0; font-family:Arial,sans-serif; line-height:1.6; color:#111; }
-    header, main, footer { max-width:1000px; margin:0 auto; padding:24px; }
-    header { border-bottom:1px solid #ddd; }
-    nav a { margin-right:16px; color:#0a58ca; text-decoration:none; }
-    nav a:hover { text-decoration:underline; }
-    section { margin-top:32px; }
-    .layer { border:1px solid #ddd; padding:16px; margin-top:16px; }
-  </style>
+  <meta name="description" content="A layered protocol atlas for hybrid AI-native systems." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css" />
 </head>
 <body>
-  <header>
-    <strong><a href="../" style="text-decoration:none; color:#111;">HAINPRO</a></strong>
-    <nav style="margin-top:12px;">
-      <a href="../">Overview</a>
-      <a href="../atlas/">Atlas</a>
-      <a href="../compare/">Compare</a>
-      <a href="../gap-map/">Gap Map</a>
-      <a href="../hainp/">HAINP</a>
-      <a href="../profiles/">Profiles</a>
-      <a href="../resources/">Resources</a>
-    </nav>
+  
+      <div class="utility">
+        <div class="container">
+          <a href="https://hainworld.com">HAIN World</a>
+          <a href="https://hainative.com">HAINATIVE</a>
+          <a href="https://hainoa.org">HAINOA</a>
+          <a href="https://hainize.com">HAINIZE</a>
+        </div>
+      </div>
+    
+  <header class="site-header">
+    <div class="mainnav">
+      <div class="container">
+        <a href="../" class="brand">HAINPRO</a>
+        <nav class="navlinks"><a href="../">Overview</a><a href="../atlas/">Atlas</a><a href="../compare/">Compare</a><a href="../gap-map/">Gap Map</a><a href="../hainp/">HAINP</a><a href="../profiles/">Profiles</a><a href="../resources/">Resources</a><a href="../charter/">Charter</a><a href="../status/">Status</a></nav>
+      </div>
+    </div>
   </header>
 
-  <main>
-    <section>
+  <main class="container">
+    <section class="hero">
+      <span class="eyebrow">Protocol Atlas for Hybrid AI Native Systems</span>
       <h1>Protocol Atlas</h1>
-      <p>
-        A structured map of the protocols, standards, and technical layers
-        shaping hybrid AI-native systems.
-      </p>
+      <p>A structured map of the protocols, standards, and technical layers shaping hybrid AI-native systems.</p>
     </section>
+    
+<section class="section">
+  <h2>Layered ecosystem view</h2>
+  <p class="lead">The current stack is best understood as complementary layers, not as a flat list of competing protocols.</p>
+  <div class="grid">
+    <div class="card"><h3>Layer 1 — Web and cloud foundations</h3><p>HTTP, OpenAPI, OAuth, SPIFFE, OpenTelemetry, OCI</p></div>
+    <div class="card"><h3>Layer 2 — Tool and context access</h3><p>MCP and adjacent tool-access patterns</p></div>
+    <div class="card"><h3>Layer 3 — Agent-to-agent collaboration</h3><p>A2A and agent coordination contracts</p></div>
+    <div class="card"><h3>Layer 4 — Surface and interaction</h3><p>ACP, A2UI, AG-UI, surface-specific protocols</p></div>
+    <div class="card"><h3>Layer 5 — Commerce and transaction</h3><p>UCP, AP2, and other emerging transaction layers</p></div>
+    <div class="card"><h3>Layer 6 — Hybrid execution and governance</h3><p>HAINP, focused on execution domains, locality, routing, fallback, portability, and audit continuity</p></div>
+  </div>
+</section>
+<section class="section">
+  <h2>Why this atlas matters</h2>
+  <p class="lead">The protocol problem is no longer “which single protocol wins.” It is how multiple protocol families compose into a workable stack for hybrid AI-native systems.</p>
+  <div class="callout">
+    <p>HAINPRO treats the ecosystem as a stack that still lacks a disciplined execution and governance layer across local, edge, private, and cloud environments.</p>
+  </div>
+</section>
 
-    <section>
-      <h2>Layered ecosystem view</h2>
-
-      <div class="layer">
-        <h3>Layer 1 — Web and cloud foundations</h3>
-        <p>HTTP, OpenAPI, OAuth, SPIFFE, OpenTelemetry, OCI</p>
-      </div>
-
-      <div class="layer">
-        <h3>Layer 2 — Tool and context access</h3>
-        <p>MCP</p>
-      </div>
-
-      <div class="layer">
-        <h3>Layer 3 — Agent-to-agent collaboration</h3>
-        <p>A2A</p>
-      </div>
-
-      <div class="layer">
-        <h3>Layer 4 — Surface and interaction protocols</h3>
-        <p>ACP, A2UI, AG-UI</p>
-      </div>
-
-      <div class="layer">
-        <h3>Layer 5 — Commerce and transaction</h3>
-        <p>UCP, AP2</p>
-      </div>
-
-      <div class="layer">
-        <h3>Layer 6 — Hybrid execution and governance</h3>
-        <p>HAINP</p>
-      </div>
-    </section>
-
-    <section>
-      <h2>Why this atlas matters</h2>
-      <p>
-        Hybrid AI-native systems do not rely on a single protocol. They emerge
-        from a layered stack of standards for transport, identity, observability,
-        tooling, agent collaboration, interaction, packaging, and governance.
-      </p>
-      <p>
-        HAINPRO organizes this stack so the missing execution and policy layer
-        becomes easier to see.
-      </p>
-    </section>
   </main>
 
-  <footer>
-    <p><a href="../">Back to HAINPRO</a></p>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand" style="font-size:1.25rem">HAINPRO</div>
+        <p class="small">The protocol atlas, comparison hub, and HAINP drafting layer within the HAIN system.</p>
+      </div>
+      <div>
+        <h4>HAIN chain</h4>
+        <ul class="small">
+          <li><a href="https://hainworld.com">HAIN World</a></li>
+          <li><a href="https://hainative.com">HAINATIVE</a></li>
+          <li><a href="https://hainoa.org">HAINOA</a></li>
+          <li><a href="https://hainize.com">HAINIZE</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Inside HAINPRO</h4>
+        <ul class="small">
+          <li><a href="../atlas/">Atlas</a></li>
+          <li><a href="../compare/">Compare</a></li>
+          <li><a href="../gap-map/">Gap Map</a></li>
+          <li><a href="../hainp/">HAINP</a></li>
+        </ul>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

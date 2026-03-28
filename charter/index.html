@@ -4,163 +4,99 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Charter — HAINPRO</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      color: #111;
-      background: #fff;
-    }
-    header, main, footer {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 24px;
-    }
-    header {
-      border-bottom: 1px solid #ddd;
-    }
-    nav a {
-      margin-right: 16px;
-      color: #0a58ca;
-      text-decoration: none;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    section {
-      margin-top: 32px;
-    }
-    .block {
-      border: 1px solid #ddd;
-      padding: 16px;
-      margin-top: 16px;
-    }
-    ul {
-      padding-left: 20px;
-    }
-  </style>
+  <meta name="description" content="Charter for HAINPRO and the HAINP program." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css" />
 </head>
 <body>
-  <header>
-    <strong><a href="../" style="text-decoration:none; color:#111;">HAINPRO</a></strong>
-    <nav style="margin-top:12px;">
-      <a href="../">Overview</a>
-      <a href="../atlas/">Atlas</a>
-      <a href="../compare/">Compare</a>
-      <a href="../gap-map/">Gap Map</a>
-      <a href="../hainp/">HAINP</a>
-      <a href="../profiles/">Profiles</a>
-      <a href="../resources/">Resources</a>
-      <a href="../charter/">Charter</a>
-      <a href="../status/">Status</a>
-    </nav>
+  
+      <div class="utility">
+        <div class="container">
+          <a href="https://hainworld.com">HAIN World</a>
+          <a href="https://hainative.com">HAINATIVE</a>
+          <a href="https://hainoa.org">HAINOA</a>
+          <a href="https://hainize.com">HAINIZE</a>
+        </div>
+      </div>
+    
+  <header class="site-header">
+    <div class="mainnav">
+      <div class="container">
+        <a href="../" class="brand">HAINPRO</a>
+        <nav class="navlinks"><a href="../">Overview</a><a href="../atlas/">Atlas</a><a href="../compare/">Compare</a><a href="../gap-map/">Gap Map</a><a href="../hainp/">HAINP</a><a href="../profiles/">Profiles</a><a href="../resources/">Resources</a><a href="../charter/">Charter</a><a href="../status/">Status</a></nav>
+      </div>
+    </div>
   </header>
 
-  <main>
-    <section>
+  <main class="container">
+    <section class="hero">
+      <span class="eyebrow">Protocol Atlas for Hybrid AI Native Systems</span>
       <h1>Charter</h1>
-      <p>
-        HAINPRO is the protocol atlas and protocol program portal within the HAIN ecosystem.
-        Its purpose is to map the emerging protocol landscape, clarify boundaries,
-        identify the missing layer for hybrid AI-native systems, and provide a disciplined
-        path for defining HAIN Protocol (HAINP).
-      </p>
+      <p>The mission, scope, and working path for HAINPRO as the protocol atlas and protocol program portal within the HAIN system.</p>
     </section>
+    
+<section class="section">
+  <h2>Mission</h2>
+  <div class="note"><p>To organize, compare, and extend the protocol ecosystem relevant to hybrid AI-native systems, and to define the execution and governance semantics that remain underspecified across local, edge, private, and cloud environments.</p></div>
+</section>
+<section class="section">
+  <h2>Scope</h2>
+  <div class="note">
+    <ul class="list">
+      <li>Map protocol layers across foundations, tools, agents, interaction, identity, observability, and governance</li>
+      <li>Compare existing protocols by role, boundary, and interoperability assumptions</li>
+      <li>Identify protocol gaps for hybrid execution and policy-aware coordination</li>
+      <li>Define HAINP as the missing execution and governance semantics layer</li>
+      <li>Develop vertical profiles and capability tracks to validate real-world applicability</li>
+    </ul>
+  </div>
+</section>
+<section class="section">
+  <h2>Position within HAIN</h2>
+  <div class="grid">
+    <div class="card"><h3>HAIN World</h3><p>Introduces the system and provides public entry.</p></div>
+    <div class="card"><h3>HAINATIVE</h3><p>Defines the category and why the direction matters now.</p></div>
+    <div class="card"><h3>HAINOA</h3><p>Explains the architecture and structural language.</p></div>
+    <div class="card"><h3>HAINPRO</h3><p>Maps and specifies the protocol layer.</p></div>
+    <div class="card"><h3>HAINIZE</h3><p>Operationalizes the system into adoption and productization.</p></div>
+  </div>
+</section>
+<section class="section">
+  <h2>Initial priority path</h2>
+  <div class="callout">
+    <p>Phase 1: atlas, comparison, and gap mapping → Phase 2: HAINP draft family → Phase 3: profile definition beginning with HAINAUTO → Phase 4: reference patterns, schemas, and implementation guidance.</p>
+  </div>
+</section>
 
-    <section>
-      <h2>Mission</h2>
-      <div class="block">
-        <p>
-          To organize, compare, and extend the protocol ecosystem relevant to hybrid
-          AI-native systems, and to define the execution and governance semantics
-          that remain underspecified across local, edge, private, and cloud environments.
-        </p>
-      </div>
-    </section>
-
-    <section>
-      <h2>Scope</h2>
-      <div class="block">
-        <ul>
-          <li>Map protocol layers across web foundations, tools, agents, interaction, identity, observability, and governance</li>
-          <li>Compare existing protocols by role, boundary, and interoperability assumptions</li>
-          <li>Identify protocol gaps for hybrid execution and policy-aware coordination</li>
-          <li>Define HAINP as the missing execution and governance semantics layer</li>
-          <li>Develop vertical profiles and capability tracks to validate real-world applicability</li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <h2>Non-goals</h2>
-      <div class="block">
-        <ul>
-          <li>Not a replacement for HTTP or core web standards</li>
-          <li>Not a replacement for MCP as a tool and context access protocol</li>
-          <li>Not a replacement for A2A as a generic agent collaboration protocol</li>
-          <li>Not a low-level transport protocol</li>
-          <li>Not a base automotive, V2X, or robotics control protocol</li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <h2>Protocol object</h2>
-      <div class="block">
-        <p>
-          The core protocol object behind HAINP is the <strong>Hybrid Execution Contract</strong>:
-          a structured way to express how a task is constrained, routed, executed, degraded,
-          and audited across multiple execution domains.
-        </p>
-      </div>
-    </section>
-
-    <section>
-      <h2>Initial core concerns</h2>
-      <div class="block">
-        <ul>
-          <li>Execution domains</li>
-          <li>Locality and residency constraints</li>
-          <li>Policy-aware routing</li>
-          <li>Governed fallback</li>
-          <li>Context portability</li>
-          <li>Trace and audit continuity</li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <h2>Initial priorities</h2>
-      <div class="block">
-        <p>
-          HAINPRO starts as an atlas-first initiative. It begins by structuring the existing
-          protocol ecosystem before expanding into HAINP drafts and profile-based validation.
-        </p>
-        <ul>
-          <li>Phase 1: Atlas, comparison, and gap mapping</li>
-          <li>Phase 2: HAINP draft set</li>
-          <li>Phase 3: Profile definition, starting with HAINAUTO</li>
-          <li>Phase 4: Reference patterns, schemas, and implementation guidance</li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <h2>Position within HAIN</h2>
-      <div class="block">
-        <ul>
-          <li><strong>HAIN World</strong> introduces the system</li>
-          <li><strong>HAINOA</strong> explains the architecture</li>
-          <li><strong>HAINPRO</strong> maps and specifies the protocol layer</li>
-          <li><strong>HAINIZE</strong> operationalizes the system into adoption and productization</li>
-        </ul>
-      </div>
-    </section>
   </main>
 
-  <footer>
-    <p><a href="../">Back to HAINPRO</a></p>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand" style="font-size:1.25rem">HAINPRO</div>
+        <p class="small">The protocol atlas, comparison hub, and HAINP drafting layer within the HAIN system.</p>
+      </div>
+      <div>
+        <h4>HAIN chain</h4>
+        <ul class="small">
+          <li><a href="https://hainworld.com">HAIN World</a></li>
+          <li><a href="https://hainative.com">HAINATIVE</a></li>
+          <li><a href="https://hainoa.org">HAINOA</a></li>
+          <li><a href="https://hainize.com">HAINIZE</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Inside HAINPRO</h4>
+        <ul class="small">
+          <li><a href="../atlas/">Atlas</a></li>
+          <li><a href="../compare/">Compare</a></li>
+          <li><a href="../gap-map/">Gap Map</a></li>
+          <li><a href="../hainp/">HAINP</a></li>
+        </ul>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
