@@ -1,1 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compare Protocols — HAINPRO</title>
+  <style>
+    body { margin:0; font-family:Arial,sans-serif; line-height:1.6; color:#111; }
+    header, main, footer { max-width:1100px; margin:0 auto; padding:24px; }
+    header { border-bottom:1px solid #ddd; }
+    nav a { margin-right:16px; color:#0a58ca; text-decoration:none; }
+    table { width:100%; border-collapse:collapse; margin-top:20px; }
+    th, td { border:1px solid #ddd; padding:10px; text-align:left; vertical-align:top; }
+    th { background:#f7f7f7; }
+  </style>
+</head>
+<body>
+  <header>
+    <strong><a href="../" style="text-decoration:none; color:#111;">HAINPRO</a></strong>
+    <nav style="margin-top:12px;">
+      <a href="../">Overview</a>
+      <a href="../atlas/">Atlas</a>
+      <a href="../compare/">Compare</a>
+      <a href="../gap-map/">Gap Map</a>
+      <a href="../hainp/">HAINP</a>
+      <a href="../profiles/">Profiles</a>
+      <a href="../resources/">Resources</a>
+    </nav>
+  </header>
 
+  <main>
+    <h1>Compare Protocols</h1>
+    <p>
+      A structured comparison of the emerging protocol stack by scope,
+      actors, and runtime role.
+    </p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Protocol</th>
+          <th>Primary role</th>
+          <th>Main actors</th>
+          <th>What it helps solve</th>
+          <th>What it does not fully define</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>MCP</td>
+          <td>Tool and context access</td>
+          <td>AI app, model, tool, external system</td>
+          <td>Connects models and applications to tools and data sources</td>
+          <td>Cross-domain execution semantics, policy-aware routing, governed fallback</td>
+        </tr>
+        <tr>
+          <td>A2A</td>
+          <td>Agent collaboration</td>
+          <td>Agent to agent</td>
+          <td>Supports communication and coordination across agents</td>
+          <td>Locality policy, execution-domain semantics, shared fallback contracts</td>
+        </tr>
+        <tr>
+          <td>ACP</td>
+          <td>Editor-agent surface</td>
+          <td>IDE/editor, coding agent</td>
+          <td>Standardizes editor-facing agent communication</td>
+          <td>General hybrid execution semantics across environments</td>
+        </tr>
+        <tr>
+          <td>HAINP</td>
+          <td>Hybrid execution and governance</td>
+          <td>Nodes, agents, runtimes, policy layers</td>
+          <td>Defines execution domains, locality, routing, fallback, portability, and audit continuity</td>
+          <td>Does not try to replace transport, tool access, or generic agent collaboration layers</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <section style="margin-top:32px;">
+      <h2>Editorial note</h2>
+      <p>
+        Not every protocol competes with every other protocol. Many of the most
+        important protocols are complementary and operate at different layers.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="../">Back to HAINPRO</a></p>
+  </footer>
+</body>
+</html>
